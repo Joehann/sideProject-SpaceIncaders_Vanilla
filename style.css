@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ddd;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #5c47d2;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  box-shadow: 0 2px 10px #5c47d2;
+  background: url(ressources/background.jpg);
+}
+
+h3 {
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
+}
+.grid div {
+  width: 25px;
+  height: 25px;
+}
+.shooter {
+  background: url(ressources/vaisseau.png);
+  transform: rotate(180deg);
+  background-position: center;
+  background-size: contain;
+}
+.alien {
+  background: url(ressources/ennemies.png);
+  background-position: center;
+  background-size: contain;
+}
+.boom {
+  background-color: #d27a47;
+  border-radius: 50%;
+}
+.laser {
+  background-color: rgb(0, 255, 115);
+  border-radius: 50%;
+}
