@@ -1,5 +1,5 @@
 const container = document.querySelector(".grid");
-const display = document.querySelector("h3");
+const display = document.querySelector("h2");
 let results = 0;
 let allDivs;
 let alienInvaders = [];
@@ -52,7 +52,7 @@ const createGridAndAliens = () => {
 
 createGridAndAliens();
 
-//Manage the movements of the shooter
+//Movements of the shooter
 const moveShooters = (e) => {
   allDivs[shooterPosition].classList.remove("shooter");
 
@@ -69,7 +69,7 @@ const moveShooters = (e) => {
 };
 document.addEventListener("keydown", moveShooters);
 
-// bouger les aliens
+// Movements of the aliens
 let downRight = true;
 let downLeft = true;
 
@@ -123,9 +123,9 @@ const moveAliens = () => {
 };
 invaderId = setInterval(moveAliens, 500);
 
-// Le laser
+// Laser
 
-function tirer(e) {
+function shoot(e) {
   let laserId;
   let activeLaser = shooterPosition;
 
@@ -168,4 +168,4 @@ function tirer(e) {
   }
 }
 
-document.addEventListener("keyup", tirer);
+document.addEventListener("keyup", shoot);
